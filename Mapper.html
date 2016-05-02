@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Mapper</title>
+
+    <!--style-->
+
+</head>
+
+<body>
+    <b>Note:</b> To use this you have to just paste your class in input area and click on Mappper button and make sure your class should be well formate as Sample input.<br>
+    For demo you can click on <b>Demo</b> button.<br>
+    <b>Usage:</b> Daily job of coding we need to convert our class entity to DTO object and vice-versa. In my case i need one interface and constructor so i added it also.
+    <div>
+        <textarea name="input" id="taInput" cols="60" rows="40" placeholder="input"></textarea>
+        <input type="button" value="Mapper" onclick="generateMappper();">
+        <textarea name="output" id="taOutput" cols="60" rows="40" placeholder="output"></textarea>
+    </div>
+        <input type="button" value="Demo" onclick="demo();">
+
+
+<pre>
+    <b style="color:green;">Sample Input</b>
+<code>
+    public partial class Customer
+    {
+        public long CustomerIID { get; set; }
+        public Nullable<long> LoginID { get; set; }
+        public string Name { get; set; }
+        public Nullable<System.DateTime> CreatedDate { get; set; }
+    }
+</code>
+</pre>
+
+    </div>
+</body>
+
+<!--script-->
+<script type="text/javascript" src="Mapper.js"></script>
+
+</html>
+
